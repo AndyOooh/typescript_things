@@ -1,3 +1,8 @@
+/*
+ * Old way of doing things
+ * Stage 2 was before TS 5.0
+ */
+
 // // function toUpperCase(target: Object, str: string, descriptor: TypedPropertyDescriptor<any>) {
 // //   /* store original before modification */
 // //   const originalMethod = descriptor.value;

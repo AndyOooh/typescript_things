@@ -1,3 +1,8 @@
+/*
+ * Decorators stage 3
+ * Came with TS 5.0
+ */
+
 function split(originalMethod: any, context: ClassMethodDecoratorContext) {
   function replacementMethod(this: any, ...args: any[]) {
     args[0] = args[0].split('');

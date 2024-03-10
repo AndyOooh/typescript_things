@@ -1,7 +1,8 @@
 /*
- * Arrow functions seem to work the same as normal ones.
+ * Using stage 3 (TS 5.0) decorators.
  */
 const loggedMethod = (originalMethod: any, context: ClassMethodDecoratorContext) => {
+  // Arrow functions seem to work the same as normal ones, despite THIS.
   // function loggedMethod(originalMethod: any, context: ClassMethodDecoratorContext) {
   const methodName = String(context.name);
 
@@ -29,9 +30,3 @@ class Person {
 
 const p = new Person('Ron');
 p.greet();
-
-// Output:
-//
-//   LOG: Entering method.
-//   Hello, my name is Ron.
-//   LOG: Exiting method.
